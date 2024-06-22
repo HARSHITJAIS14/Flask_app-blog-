@@ -7,7 +7,7 @@ class Config:
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
     MAIL_USE_TLS = True
-    MAIL_USERNAME = 'app.hjais@gmail.com'
-    MAIL_PASSWORD = 'qbydohzlghiwxnee'
-    MAIL_DEFAULT_SENDER = 'app.hjais@gmail.com'
+    MAIL_USERNAME = os.environ.get('EMAIL_USER')
+    MAIL_PASSWORD = os.environ.get('EMAIL_PASS')
+    MAIL_DEFAULT_SENDER = os.environ.get('EMAIL_USER')
 
